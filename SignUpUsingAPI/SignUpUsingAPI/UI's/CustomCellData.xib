@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCellDataId" rowHeight="395" id="KGk-i7-Jjw" customClass="CustomCellData" customModule="SignUpUsingAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="669"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="669"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="uim-Dk-LCm">
+                        <rect key="frame" x="123" y="15" width="106" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="106" id="2SC-45-PNG"/>
+                            <constraint firstAttribute="height" constant="67" id="NyC-HA-okt"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xvg-g9-CYC">
+                        <rect key="frame" x="56.666666666666671" y="117" width="240" height="404.66666666666663"/>
+                        <subviews>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3U-GU-0RJ" userLabel="NameStack View">
+                                <rect key="frame" x="0.0" y="0.0" width="240.00000000000003" height="40.666666666666657"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Name" translatesAutoresizingMaskIntoConstraints="NO" id="D9p-oR-c5N">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.000000000000007" height="40.666666666666657"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="nJn-za-2gc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R3I-cV-Qne">
+                                        <rect key="frame" x="40" y="0.0" width="200" height="40.666666666666657"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ga4-42-SYd"/>
+                                    <constraint firstAttribute="width" constant="240" id="hik-Uy-6bh"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7v-uj-Huf" userLabel="EmailStack View">
+                                <rect key="frame" x="0.0" y="60.666666666666657" width="240.00000000000003" height="40.666666666666686"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="Pb3-Mu-lmS">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.000000000000007" height="40.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="WAd-0d-Bru"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwj-s8-kZz">
+                                        <rect key="frame" x="40" y="0.0" width="200" height="40.666666666666686"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCU-ar-CB7" userLabel="PasswordStack View">
+                                <rect key="frame" x="0.0" y="121.33333333333336" width="240.00000000000003" height="40.666666666666643"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Password" translatesAutoresizingMaskIntoConstraints="NO" id="vVE-Oq-kaK">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.000000000000007" height="40.666666666666657"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="pl2-Wc-SM0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nfm-uE-Z8J">
+                                        <rect key="frame" x="40" y="0.0" width="200" height="40.666666666666657"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugJ-oc-vLg" userLabel="ContactStack View">
+                                <rect key="frame" x="0.0" y="182" width="240.00000000000003" height="40.666666666666686"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact" translatesAutoresizingMaskIntoConstraints="NO" id="X8V-OX-vYE">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.000000000000007" height="40.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="y1b-X7-gfj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-Zx-1ko">
+                                        <rect key="frame" x="40" y="0.0" width="200" height="40.666666666666686"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2A-Ar-JPV" userLabel="AddressStack View">
+                                <rect key="frame" x="0.0" y="242.66666666666669" width="240.00000000000003" height="40.666666666666629"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Address" translatesAutoresizingMaskIntoConstraints="NO" id="QFa-xp-JOa">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.000000000000007" height="40.666666666666629"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Gt8-oe-noi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="poZ-B6-SDg">
+                                        <rect key="frame" x="40" y="0.0" width="200" height="40.666666666666629"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zz-zP-1Fy" userLabel="CityStack View">
+                                <rect key="frame" x="0.0" y="303.33333333333326" width="240.00000000000003" height="40.666666666666686"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City" translatesAutoresizingMaskIntoConstraints="NO" id="hqx-SW-v3n">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.000000000000007" height="40.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="4mF-bl-oyU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-Oa-ZoM">
+                                        <rect key="frame" x="40" y="0.0" width="200" height="40.666666666666686"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khd-UJ-Zto" userLabel="CountryStack View">
+                                <rect key="frame" x="0.0" y="364" width="240.00000000000003" height="40.666666666666629"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Country" translatesAutoresizingMaskIntoConstraints="NO" id="WHY-x5-oZc">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.000000000000007" height="40.666666666666629"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="IYZ-Fv-wDd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Me-g0-CNx">
+                                        <rect key="frame" x="40" y="0.0" width="200" height="40.666666666666629"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAP-Cw-SSh">
+                        <rect key="frame" x="133" y="544" width="86" height="42"/>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        <state key="normal" title="SignUp">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jAP-Cw-SSh" firstAttribute="top" secondItem="xvg-g9-CYC" secondAttribute="bottom" constant="22.666666666666629" id="3rd-cM-xkK"/>
+                    <constraint firstItem="uim-Dk-LCm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ASU-Ke-u9M"/>
+                    <constraint firstItem="xvg-g9-CYC" firstAttribute="top" secondItem="uim-Dk-LCm" secondAttribute="bottom" constant="35" id="EzM-Gd-CuG"/>
+                    <constraint firstItem="uim-Dk-LCm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NIx-YG-6pl"/>
+                    <constraint firstItem="uim-Dk-LCm" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.1" id="cwg-7T-klo"/>
+                    <constraint firstItem="jAP-Cw-SSh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ihF-OQ-3x9"/>
+                    <constraint firstItem="xvg-g9-CYC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nXL-AJ-C1z"/>
+                    <constraint firstItem="uim-Dk-LCm" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="s1v-S9-DID"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.85878867775334244" green="0.85044804166807741" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressText" destination="poZ-B6-SDg" id="phd-h0-8Kk"/>
+                <outlet property="cityTextField" destination="TAM-Oa-ZoM" id="yOa-Fi-sU8"/>
+                <outlet property="contactTextField" destination="z9e-Zx-1ko" id="fjb-pI-CAH"/>
+                <outlet property="countryTextField" destination="2Me-g0-CNx" id="vWv-p9-v80"/>
+                <outlet property="emailTextField" destination="Xwj-s8-kZz" id="5Ln-Nz-Dyf"/>
+                <outlet property="nameTextField" destination="R3I-cV-Qne" id="jhb-X6-jBT"/>
+                <outlet property="passwordTextField" destination="Nfm-uE-Z8J" id="uKb-ES-1Dl"/>
+                <outlet property="signUpButton" destination="jAP-Cw-SSh" id="qOd-Yq-9V4"/>
+            </connections>
+            <point key="canvasLocation" x="-1375" y="-47"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Address" width="170" height="170"/>
+        <image name="City" width="533" height="533"/>
+        <image name="Contact" width="1111" height="1496"/>
+        <image name="Country" width="75" height="75"/>
+        <image name="Email" width="170" height="170"/>
+        <image name="Name" width="170" height="170"/>
+        <image name="Password" width="533" height="533"/>
+        <image name="signup" width="219" height="99"/>
+    </resources>
+</document>
